@@ -17,6 +17,8 @@ defmodule TwixlerWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    resources "/tweets", TweetController
   end
 
   # Other scopes may use custom stacks.

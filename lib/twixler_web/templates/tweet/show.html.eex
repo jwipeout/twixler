@@ -1,0 +1,13 @@
+<h2>Show Tweet</h2>
+
+<ul>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @tweet.body %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: tweet_path(@conn, :edit, @tweet) %></span>
+<span><%= link "Back", to: tweet_path(@conn, :index) %></span>
